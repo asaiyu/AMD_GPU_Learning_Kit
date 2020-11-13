@@ -1,11 +1,11 @@
 # AMD GPU Learning Kit
 
-## Introduction to ROCm
-## Memory and Data Locality
-## Memory Access
-## Multi-Thread Execution
-## Parallel Computing
-## OpenMP
-## Computer Vision applications 
-## Neural networks
-## Translating CUDA to HIP
+## [Introduction to ROCm](IntroToRoc/Intro.md)
+## [Memory and Data Locality](MemoryandDataLocality/Intro.md)
+## [Memory Access](MemoryAccess/Intro.md)
+## [Multi-Thread Execution](MultiThreadExecution/Intro.md)
+## [Parallel Computing](ParallelComputing/Intro.md)
+## [OpenMP](OpenMP/Intro.md)
+## [Computer Vision applications](ComputerVisionApps/Intro.md)
+## [Neural networks](NeuralNetworks/Intro.md)
+## [Translating CUDA to HIP](TransCUDAtoHIP/Intro.md)
