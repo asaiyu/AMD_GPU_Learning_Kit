@@ -1,6 +1,6 @@
 # AMD GPU Learning Kit
 
-## [Introduction to ROCm](IntroToRoc/Intro.md)
+## [Introduction to ROCm](IntroToRocm/Intro.md)
 ## [Memory and Data Locality](MemoryandDataLocality/Intro.md)
 ## [Memory Access](MemoryAccess/Intro.md)
 ## [Multi-Thread Execution](MultiThreadExecution/Intro.md)
