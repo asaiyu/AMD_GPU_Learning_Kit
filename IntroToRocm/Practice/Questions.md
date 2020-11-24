@@ -8,7 +8,7 @@ ROCm is an open-source development platform for GPU computing.
 <summary>What command can you use to check which version of ROCm you are
 using?</summary>
 <br>
-Running `/opt/rocm/bin/hipconfig --full` will show you which version you are
+Running <pre>/opt/rocm/bin/hipconfig --full</pre>will show you which version you are
 currently running on your machine.
 </details>
 
@@ -22,9 +22,11 @@ C++ constructs.
 <details>
 <summary>Which compilers does AMD ROCm support?</summary>
 <br>
-- C++ compiler - Clang++
-- C compiler - Clang
-- Flang - FORTRAN compiler (FORTRAN 2003 standard)
+  <ul>
+    <li>C++ compiler - Clang++</li>
+    <li>C compiler - Clang</li>
+    <li>Flang - FORTRAN compiler (FORTRAN 2003 standard)</li>
+  </ul>
 </details>
 
 <details>
