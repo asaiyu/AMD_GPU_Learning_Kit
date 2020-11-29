@@ -8,9 +8,6 @@ Laid out in the below table of contents are all the chapters in this teaching ki
 Within the introduction will be links to chapter material, example code, and a quiz to test your understanding.
 All material is contained within markdown files (besides in the cases of example code), and can be navigated via hyperlinks within the markdown files.
 
-## Contributing
-If you want to contribute or help with the development of this teaching kit, create a fork of this repo and open a feature branch. Then, create a pull request. We'd love to make this teaching kit the best it can be with your help!
-
 ## Table of Contents
 - [Introduction to ROCm](IntroToRocm/Intro.md)
 - [Memory and Data Locality](MemoryandDataLocality/Intro.md)
@@ -21,3 +18,6 @@ If you want to contribute or help with the development of this teaching kit, cre
 - [Computer Vision applications](ComputerVisionApps/Intro.md)
 - [Neural networks](NeuralNetworks/Intro.md)
 - [Translating CUDA to HIP](TransCUDAtoHIP/Intro.md)
+
+## Contributing
+If you want to contribute or help with the development of this teaching kit, create a fork of this repo and open a feature branch. Then, create a pull request. We'd love to make this teaching kit the best it can be with your help!
