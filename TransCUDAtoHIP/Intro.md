@@ -22,7 +22,7 @@ If a programmer had to port all of this CUDA code manually, it would likely take
 
 Both tools offer advantages and disadvantages.
 
-The `hipify-perl` script does not check the input source CUDA code for correctness, and does not depend on any third party tools, including CUDA. However, it does have a few constructs it cannot transform correctly, including macros expansion, namespaces, and device/host funciton calls distinguishing.
+The `hipify-perl` script does not check the input source CUDA code for correctness, and does not depend on any third party tools, including CUDA. However, it does have a few constructs it cannot transform correctly, including macros expansion, namespaces, and device/host function calls distinguishing.
 
 The `hipify-clang` tool is a real translator, meaning even very complicated constructs will be correctly translated (unless an error occurs). It also supports clang options such as `-I` and `-D`, and features seamless support of new CUDA versions (as it depends on clang). The big disadvantages when compared to hipify-perl, however, is that incorrect input CUDA code won't be translated to HIP and CUDA must be installed (as the tool depends on this installation).
 
@@ -56,8 +56,9 @@ The resulting HIP-ready .cpp file can then be compiled for the ROCm environment 
 
 
 ## Practice Problems / Questions
-[Review questions on this topic](Practice/Questions.md)
-[Practice](Practice/Examples.md)
+- [Review questions on this topic](Practice/Questions.md)
+- [Practice](Practice/Examples.md)
+
 
 ## Resources / References
 - [HIPIFY GitHub Repo](https://github.com/ROCm-Developer-Tools/HIPIFY)
