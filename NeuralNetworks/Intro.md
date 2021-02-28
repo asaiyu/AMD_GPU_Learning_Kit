@@ -6,19 +6,35 @@ Neural Networks in the artificial intelligence community are an interconnected g
 
 ## How to use your GPU with your code
 
-Using Ubuntu:
+### Using Ubuntu:
 In order to ensure that your code is using your AMD GPU, you have to ensure that your user has access to the GPU resources. This can be achieved by adding yourself to the video group using this line
-'''sudo usermod -a -G video $LOGNAME'''
+```sudo usermod -a -G video $LOGNAME```
 
 You will then have to reboot your system to make the change to take effect.
 
-Now you should double check your ROCm by following the
+You can then double check that your ROCm stack is correct by running the following commands.
+
+```/opt/rocm/bin/rocminfo```
+
+As well as
+
+```/opt/rocm/opencl/bin/x86_64/clinfo```
+
+ROCm also suggests that you add the binaries to the PATH using:
+
+```echo 'export PATH=$PATH:/opt/rocm/bin:/opt/rocm/profiler/bin:/opt/rocm/opencl/bin/x86_64' | sudo tee -a /etc/profile.d/rocm.sh```
+
+If this all went smoothly, then running
+
+```rocm-smi```
+
+should display your hardware information.
 
 The easiest way to get machine learning projects started is with Tensorflow and Keras. We recommend using Docker to get the libraries that you need. Most of these projects are also implemented in python as it makes it simple to write the functions necessary for machine learning.
 
 
 ## Questions
-  - [Review questions on this topic](Practice/Questions.md) 
+  - [Review questions on this topic](Practice/Questions.md)
 
 ## Resources
  - [Train neural networks using AMD GPUs and keras](https://towardsdatascience.com/train-neural-networks-using-amd-gpus-and-keras-37189c453878)
