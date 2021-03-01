@@ -8,6 +8,7 @@ Neural Networks in the artificial intelligence community are an interconnected g
 
 ### Using Ubuntu:
 In order to ensure that your code is using your AMD GPU, you have to ensure that your user has access to the GPU resources. This can be achieved by adding yourself to the video group using this line
+
 ```sudo usermod -a -G video $LOGNAME```
 
 You will then have to reboot your system to make the change to take effect.
