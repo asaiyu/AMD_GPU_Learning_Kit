@@ -4,7 +4,7 @@
 [OpenMP (Open Multi-Processing)](https://www.openmp.org/) is a "collection of compiler directives, library routines, and environment variables ... for parallelism in C, C++ and Fortran programs [[1](#References)]."
 
 ## Why use OpenMP rather than HIP?
-While HIP can only take advantage of parallelism on GPUs, OpenMP is portable and can be used on more than GPUs such as CPUs.
+While HIP can only take advantage of parallelism on GPUs, OpenMP is portable and can work on other hardware types such as CPUs.
 OpenMP also provides a way to easily add parallelism to an existing project with less effort than HIP.
 This does not mean that OpenMP is superior to HIP. HIP provides more control over what the GPU does and an optimized HIP kernel should out perform OpenMP.
 

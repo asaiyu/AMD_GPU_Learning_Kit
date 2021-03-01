@@ -60,7 +60,7 @@ To break this down we can split it up into the following parts.
  - `collapse(2)` says how many loops to parallelize
  - `schedule(static)` maps threads to iterations in a round robin order. This means the access to memory are more GPU friendly than `schedule(dynamic)`. Check out this [Stack Overflow question](https://stackoverflow.com/questions/10850155/whats-the-difference-between-static-and-dynamic-schedule-in-openmp) for more details.
 
-We can adds this to our code to easily leverage the GPU.
+We can add this to our code to easily leverage the GPU.
 
 ```c++
 // C = AB
@@ -82,7 +82,13 @@ void matrixMultiply(float* C, float* A, unsigned int hA, unsigned int wA, float*
 
 You can test this out with the code in this directory. Make sure to have AOMP installed then run `make`. Try removing the `#pragma` lines and comparing the execution time.
 
-If you try to compile it manually make sure to use `-fopenmp` and specify the correct target with `-fopenmp-targets=` and `-Xopenmp-target=`
+ROCm now supports OpenMP through both the ROCm compiler and AOMP. If you do not have AOMP you can compile it using */opt/rocm/llvm/bin/clang*.
+
+Ex.
+```
+/opt/rocm/llvm/bin/clang -O3 -fopenmp -fopenmp-targets=amdgcn-amd-amdhsa -o matmul matmul.cpp
+```
+WARNING: This method of compilation has not been tested and may need to have arguments added/adjusted.
 
 ## Verifying GPU utilization
 

@@ -10,7 +10,7 @@ OpenMP is an abstraction on multiprocessing for C, C++ and Fortran.
 <summary>Which devices can OpenMP parallelize on?</summary>
 <br>
 
-CPUs, GPUs, FPGAs, etc.
+Unlike HIP, OpenMP can parallelize on CPUs, GPUs, FPGAs, etc.
 
 </details>
 
@@ -27,7 +27,7 @@ Use the `#pragma omp target` construct.
 ---
 
 <details>
-<summary>How do you parallelize a for loop?</summary>
+<summary>How do you parallelize a for-loop?</summary>
 <br>
 
 Use the `#pragma omp parallel for` construct.
