@@ -1,45 +1,37 @@
 <details>
-<summary>What is OpenMP?</summary>
+<summary>What are neural networks generally used for?</summary>
 <br>
-OpenMP is an abstraction on multiprocessing for C, C++ and Fortran.
+Neural networks are generally used to identify patterns or model complex relationships between inputs and outputs in datasets.
 </details>
 
 ---
 
 <details>
-<summary>Which devices can OpenMP parallelize on?</summary>
+<summary>How can a GPU help with neural networks?</summary>
 <br>
 
-CPUs, GPUs, FPGAs, etc.
-
-</details>
-
----
-
-<details>
-<summary>How do you make code run on the GPU?</summary>
-<br>
-
-Use the `#pragma omp target` construct.
+A GPU can be used to increase the speed at which the neural network trains.
 
 </details>
 
 ---
 
 <details>
-<summary>How do you parallelize a for loop?</summary>
+<summary>What line of ocde is used to ensure that your user has access to the GPU?</summary>
 <br>
 
-Use the `#pragma omp parallel for` construct.
+```sudo usermod -a -G video $LOGNAME```
 
 </details>
 
 ---
 
 <details>
-<summary>How can you quickly check if your GPU is being utilized?</summary>
+<summary>What libraries are recommended for doing neural network applications?</summary>
 <br>
 
-Run `rocm-smi` and check the GPU utilization.
+Tensorflow and Keras.
 
 </details>
+
+---
