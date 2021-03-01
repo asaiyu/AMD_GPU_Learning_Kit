@@ -17,7 +17,7 @@ A GPU can be used to increase the speed at which the neural network trains.
 ---
 
 <details>
-<summary>What line of code is used to ensure that your user has access to the GPU?</summary>
+<summary>What command is used to ensure that your user has access to the GPU?</summary>
 <br>
 
 ```sudo usermod -a -G video $LOGNAME```
@@ -30,7 +30,7 @@ A GPU can be used to increase the speed at which the neural network trains.
 <summary>What libraries are recommended for doing neural network applications?</summary>
 <br>
 
-Tensorflow and Keras.
+Tensorflow, Pytorch, and Keras.
 
 </details>
 

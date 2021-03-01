@@ -31,7 +31,7 @@ If this all went smoothly, then running
 
 should display your hardware information.
 
-The easiest way to get machine learning projects started is with Tensorflow and Keras. We recommend using Docker to get the libraries that you need. Most of these projects are also implemented in python as it makes it simple to write the functions necessary for machine learning.
+The easiest way to get machine learning projects started is with Tensorflow, Pytorch, and Keras. We recommend using Docker to get the libraries that you need. Most of these projects are also implemented in python as it makes it simple to write the functions necessary for machine learning.
 
 
 ## Questions
