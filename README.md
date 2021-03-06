@@ -12,11 +12,10 @@ All material is contained within markdown files (besides in the cases of example
 ## Table of Contents
 - [Introduction to ROCm](IntroToRocm/Intro.md)
 - [Memory and Data Locality](MemoryandDataLocality/Intro.md)
-- [Multi-Thread Execution](MultiThreadExecution/Intro.md)
 - [OpenMP](OpenMP/Intro.md)
-- [Computer Vision applications](ComputerVisionApps/Intro.md)
-- [Neural networks](NeuralNetworks/Intro.md)
 - [Translating CUDA to HIP](TransCUDAtoHIP/Intro.md)
+- [Parallel Computing](ParallelComputing/Intro.md)
+- [Neural networks](NeuralNetworks/Intro.md)
 
 ## Contributing
 If you want to contribute or help with the development of this teaching kit, create a fork of this repo and open a feature branch. Then, create a pull request. We'd love to make this teaching kit the best it can be with your help!
