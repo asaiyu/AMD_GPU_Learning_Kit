@@ -1,5 +1,6 @@
 # AMD GPU Learning Kit
 
+
 ## What is this?
 Co-developed by Computer Engineering students at Cal Poly, faculty and AMD as a Capstone project, this accelerated computing teaching kit covers introductory topics about AMD GPUs and how to interface with them. All content and code was written with an AMD Vega in mind, but should apply to any AMD GPU supported by ROCm.
 
@@ -11,13 +12,10 @@ All material is contained within markdown files (besides in the cases of example
 ## Table of Contents
 - [Introduction to ROCm](IntroToRocm/Intro.md)
 - [Memory and Data Locality](MemoryandDataLocality/Intro.md)
-- [Memory Access](MemoryAccess/Intro.md)
-- [Multi-Thread Execution](MultiThreadExecution/Intro.md)
-- [Parallel Computing](ParallelComputing/Intro.md)
 - [OpenMP](OpenMP/Intro.md)
-- [Computer Vision applications](ComputerVisionApps/Intro.md)
-- [Neural networks](NeuralNetworks/Intro.md)
 - [Translating CUDA to HIP](TransCUDAtoHIP/Intro.md)
+- [Parallel Computing](ParallelComputing/Intro.md)
+- [Neural networks](NeuralNetworks/Intro.md)
 
 ## Contributing
 If you want to contribute or help with the development of this teaching kit, create a fork of this repo and open a feature branch. Then, create a pull request. We'd love to make this teaching kit the best it can be with your help!
