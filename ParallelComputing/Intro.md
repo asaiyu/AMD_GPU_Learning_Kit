@@ -2,7 +2,7 @@
 
 
 ## What is Parallel Computing and Multithreading?
-CPUs and GPUs are designed very differently. Even though most modern CPU designs include SIMD1 instructions to improve the performance of multimedia use, GPUs have capability of having multiple operations (calculations or executions) of processes are carried out simultaneously. This concept of parallel computing brings out another topic: multithreading.
+CPUs and GPUs are designed very differently. Even though most modern CPU designs include SIMD instructions to improve the performance of multimedia use, GPUs have capability of having multiple operations (calculations or executions) of processes are carried out simultaneously. This concept of parallel computing brings out another topic: multithreading.
 
 ## Thread (Work items) vs. Warps (Wavefront) vs. Block  
 Thread are chain of instructions running on a core processor. There can be as many as 32 threads in warps (64 in wavefront) running on same core. 
