@@ -68,44 +68,6 @@ HIP_ASSERT(hipFree(d_b));
 HIP_ASSERT(hipFree(d_c));
 ``` 
 
-To break this down we can split it up into the following parts.
-
-1st Line
- - `#pragma omp` starts the OpenMP compiler directive
- - `target data` creates a data environment for the GPU (target)
- - `map(to: A[0:hA*wA], B[0:wA*wB])` says the `A` and `B` will only be read from on the GPU
- - `map(from: C[0:hA*wB])` says that `C` will only be written to on the GPU
-
- This map clause helps reduce data transfers between the CPU and GPU by saying what is being read from and what is being written to.
-
-2nd Line
- - `#pragma omp` starts the OpenMP compiler directive
- - `target` says to offload the work to the GPU
- - `teams distribute` creates a league of teams to distribute threads over
- - `parallel for` says to create a team of OpenMP threads to parallelize the following for loop
- - `collapse(2)` says how many loops to parallelize
- - `schedule(static)` maps threads to iterations in a round robin order. This means the access to memory are more GPU friendly than `schedule(dynamic)`. Check out this [Stack Overflow question](https://stackoverflow.com/questions/10850155/whats-the-difference-between-static-and-dynamic-schedule-in-openmp) for more details.
-
-We can add this to our code to easily leverage the GPU.
-
-```c++
-// C = AB
-void matrixMultiply(float* C, float* A, unsigned int hA, unsigned int wA, float*B, unsigned int wB) {
-    #pragma omp target data map(to: A[0:hA*wA], B[0:wA*wB]) map(from: C[0:hA*wB])
-    #pragma omp target teams distribute parallel for collapse(2) schedule(static)
-    
-    for(unsigned int i=0;i < hA;i++) {
-        for(unsigned int j=0;j < wB;j++) {
-            float sum = 0;
-            for(unsigned int k=0;k < wA;k++) {
-                sum += A[i * wA + k]*B[k * wB + j];
-            }
-            C[i * wB + j] = sum;
-        }
-    }
-}
-```
-
 You can test this out by compiling with hipcc (compiler for HIP) or Make, produce executable called vadd_hip
 ```
 hipcc vadd_hip.cpp -o vadd_hip
