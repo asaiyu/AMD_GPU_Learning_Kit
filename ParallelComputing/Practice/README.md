@@ -72,7 +72,6 @@ You can test this out by compiling with hipcc (compiler for HIP) or Make, produc
 ```
 hipcc vadd_hip.cpp -o vadd_hip
 ```
-WARNING: This method of compilation has not been tested and may need to have arguments added/adjusted.
 
 ## References 
 [AMD developer HIP](https://developer.amd.com/wp-content/resources/ROCm%20Learning%20Centre/chapter3/HIP-Coding-3.pdf).
