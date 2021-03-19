@@ -35,3 +35,8 @@ In global memory, it is used to prevent race conditions between two different th
 - [Review questions on this topic](Practice/Questions.md)
 - [Practice](Practice/Examples.md)
 
+## Resources / References
+- [HIPIFY GitHub Repo](https://github.com/ROCm-Developer-Tools/HIPIFY)
+- [HIP Terminologies](https://rocmdocs.amd.com/en/latest/Programming_Guides/HIP-terminology.html?highlight=block%20)
+- [AMD Developer on Vector Addition](https://developer.amd.com/wp-content/resources/ROCm%20Learning%20Centre/chapter3/Chapter3.1_Vector%20Add.pdf)
+- [NVIDIA Accelerated Computing Teaching Kit](https://developer.nvidia.com/teaching-kits)
